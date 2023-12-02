@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+       .background{
+        position: relative;
+        width: 600px;
+        height: 1060px;
+        background-color: chartreuse;
+        background-image: url(Background.png);
+        margin: 0 auto;
+       }
+       .return{
+        position: absolute;
+        height: 49px;
+        width: 49px;
+        top: 30px;
+        left: 20px;
+        /* background-color: cyan; */
+        background-image: url(return.png);
+       }
+       .title{
+        position: absolute;
+        width: 110px;
+        height: 40px;
+        /* background-color: cyan; */
+        left: 50%;
+        margin-left: -55px;
+        font-size: 25px;
+        color: #c6e4e8;
+        top: 35px;
+       }
+       /* 阿里巴巴矢量图标库 */
+       @font-face {
+        font-family: 'iconfont';
+        src: url('iconfont.woff2?t=1701432391289') format('woff2'),
+        url('iconfont.woff?t=1701432391289') format('woff'),
+        url('iconfont.ttf?t=1701432391289') format('truetype');
+        }
+       .question{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 30px;
+        right: 20px;
+        font-family: "iconfont" !important;
+        /* background-color: cyan; */
+        font-size: 49px;
+        color: #81c4c9;
+       }
+       .photo{
+        position: absolute;
+        /* 设置flex布局 */
+        display: flex;
+        flex-direction: column;
+        /* 侧轴居中对齐 */
+        align-items: center;
+        width: 150px;
+        height: 130px;
+        left: 50%;
+        margin-left: -80px;
+        top: 170px;
+        background-color: #61a5b9;
+        border-radius: 50%;
+        color: #c0dae3;
+        border: 3px solid #92c5cf;
+        padding-top: 20px;
+       }
+       .ten{
+        font-size: 60px;
+       }
+       .photo_text{
+        font-size: 20px;
+        font-weight: 700;
+       }
+       .input{
+        position: absolute;
+        /* flex布局 */
+        display: flex;
+        /* 主轴设置为y轴 */
+        flex-direction: column;
+        left: 50%;
+        margin-left: -225px;
+        top: 352px;
+        width: 450px;
+        height: 300px;
+        /* background-color: pink; */
+       }
+       .input input{
+        /* 每个元素平分 */
+        flex: 1;
+        background-color: rgba(0,0,0,0);
+        color: #ffffff;
+        font-size: 20px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: #9198c2;
+       }
+       .show{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 20px;
+        bottom: 20px;
+        font-size: 20px;
+        /* background-color: pink; */
+        color: #3dfcb4;
+       }
+       .password{
+        border-bottom: none;
+       }
+       /* 440 */
+       /* 80 */
+       .button{
+        position: absolute;
+        top: 708px;
+        left: 50%;
+        margin-left: -220px;
+        width: 440px;
+        height: 60px;
+        /* 设置圆角矩形 */
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background-color: #ffffff;
+        color: #706d9f;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 20px;
+       }
+       .bottom{
+        position: absolute;
+        top: 812px;
+        left: 50%;
+        margin-left: -160px;
+        width: 320px;
+        height: 50px;
+        /* background-color: pink; */
+        font-size: 20px;
+        text-align: center;
+       }
+       .allready{
+        color: #ffffff;
+       }
+       .sign_in{
+        color: #3dfcb4;
+       }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <a href="#" class="return"></a>
+        <div class="title">Sign Up</div>
+        <a href="#" class="question">&#xe77e;</a>
+        <a href="#" class="photo">
+            <div class="ten">十</div>
+            <div class="photo_text">PHOTO</div>
+        </a>
+        <div class="input">
+            <input type="text" value="First Name">
+            <input type="text" value="Last name">
+            <input type="text" value="Email Address">
+            <input type="text" value="Password"
+            class="password">
+            <a href="#" class="show">show</a>
+        </div>
+        <a href="#" class="button">Sign Up</a>
+        <div class="bottom">
+            <span class="allready">
+                Allready a member?
+            </span>
+            <a href="#" class="sign_in">
+                Sign in
+            </a>
+        </div>
+    </div>
+</body>
+</html>
