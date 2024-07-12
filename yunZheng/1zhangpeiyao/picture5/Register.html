@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/Register.js"></script>
+    <link  rel="stylesheet" type="text/css" href="css/Register.css">
+</head>
+<body>
+    <div class="version">
+    <div class="page"></div>
+    <div class="logo"></div>
+    <div class="word">
+        <br>
+        <br>
+        welcome to
+        <br>
+        <br>
+        云顶管理系统
+    </div>
+    <input type="text" id="name2"
+    placeholder="   账号">
+    <input type="password" id="password2"
+    placeholder="   密码">
+    <input type="password" id="password4"
+    placeholder="   请确定密码">
+    <input type="text" id="email2"
+    placeholder="   邮箱">
+    <div class="vcode1">验证码</div>
+    <input type="text" id="vcode2">
+    <div id="vcode3">1</div>
+    <button id="btn" onclick="change()">(看不清，点击更新一张)</button>
+    <button id="register" onclick="reg()">注册</button>
+    <div id="error"><br><br>验证码错误，请重试！</div>
+    <button id="confirm" onclick="del()">确认</button>
+    </div>
+</body>
+<script>
+    let a = document.getElementById("error");
+    let b = document.getElementById("confirm");
+    a.style.display = "none";
+    b.style.display = "none"; 
+    let newarr = "";
+    let arr = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f','j','h','i','g','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A', 'B', 'C', 'D', 'E','F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    for(var i = 0;i < 4;i++) {
+        var index = Math.floor(Math.random() * 62);
+        newarr += arr[index];
+    }
+    document.getElementById("vcode3").innerHTML = newarr;
+</script>
+</html>

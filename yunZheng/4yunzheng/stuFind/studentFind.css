@@ -1,0 +1,195 @@
+body {
+    background: url(https://typora--image--image.oss-cn-beijing.aliyuncs.com/%E7%99%BB%E5%BD%95%7B%E8%AE%BE%E8%AE%A1%E7%A8%BF%7D.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.saveMessageBoard {
+    position: relative;
+    width: 1130px;
+    height: 840px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 45px;
+}
+
+.logo {
+    width: 260px;
+    height: 384px;
+    position: absolute;
+    top: 10px;
+    background-repeat: no-repeat;
+    background-image: url(https://typora--image--image.oss-cn-beijing.aliyuncs.com/%E6%9C%AA%E6%A0%87%E9%A2%98-1%204.png);
+}
+
+.inquire {
+    width: 158px;
+    height: 53px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 166px;
+    left: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.save {
+    width: 158px;
+    height: 53px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 254px;
+    left: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.noticeDel {
+    width: 158px;
+    height: 53px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 342px;
+    left: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.stuAssess {
+    width: 158px;
+    height: 53px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 430px;
+    left: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.permission {
+    width: 158px;
+    height: 53px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 518px;
+    left: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.studentReg {
+    width: 158px;
+    height: 53px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 606px;
+    left: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.studentLea {
+    width: 158px;
+    height: 53px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 694px;
+    left: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.pic {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: -2px;
+}
+
+.direction {
+    width: 180px;
+    height: 70px;
+    background-color: #DBD2EB;
+    position: absolute;
+    top: 40px;
+    left: 240px;
+    border: none;
+    text-align: center;
+    line-height: 70px;
+    font-size: 35px;
+}
+
+.inforBgd {
+    width: 874px;
+    height: 600px;
+    background-color: rgba(216, 238, 240, 0.4);
+    border: none;
+    border-radius: 45px;
+    position: absolute;
+    top: 165px;
+    left: 220px;
+    box-shadow: 0px 2px 4px 0px gray;
+}
+
+.menu {
+    display: none;
+    margin-top: 10px;
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu-button1 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 110px;
+    left: 730px;
+}
+
+.menu-button2 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 540px;
+    left: 730px;
+}
+
+.content {
+    width: 77px;
+    height: 31px;
+    background-color: white;
+}
+
+table {
+    border-spacing: 50px 20px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+button:hover {
+    color: gray;
+}

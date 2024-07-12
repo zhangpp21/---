@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生信息查询</title>
+    <link rel="stylesheet" type="text/css" href="studentFind.css">
+    </head>
+</head>
+<style>
+        * {
+            margin: 0;
+        }
+</style>
+<body>
+    <div class="saveMessageBgd">
+        <div class="saveMessageBoard">
+            <div class="logo"></div>
+            <button class="inquire" onclick="location.href = '../../yunzhengxiangmu/ModifySituation/modPage.html'">
+                <div class="pic"><img src="https://typora--image--image.oss-cn-beijing.aliyuncs.com/%E5%85%85%E7%94%B5%201.png"></div>
+                &nbsp;&nbsp;&nbsp;&nbsp;学生信息查询
+            </button>
+            <button class="save" onclick="location.href = '../../yunzhengxiangmu/ModufyStudent/studentMod.html'"><div class="pic"><img src="https://typora--image--image.oss-cn-beijing.aliyuncs.com/%E5%B0%8F%E9%BB%91%E6%9D%BF%201.png"></div>&nbsp;&nbsp;&nbsp;&nbsp;学生信息修改</button>
+            <button class="noticeDel" onclick="location.href = '../../yunzhengxiangmu/NoticeContent/index.html'"><div class="pic"><img src="https://typora--image--image.oss-cn-beijing.aliyuncs.com/%E4%BB%A3%E7%A0%81%201.png"></div>&nbsp;&nbsp;&nbsp;&nbsp;通知下发</button>
+            <button class="stuAssess" onclick="location.href = '../../寒假项目/学员评估体系/学员评估体系.html'">
+                <div class="pic"><img src="https://typora--image--image.oss-cn-beijing.aliyuncs.com/%E4%B9%A6%E6%9C%AC%201.png">
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;学生评估体系
+            </button>
+            <button class="permission" onclick="location.href = '../../寒假项目/权限授予/权限授予.html'"><div class="pic"><img src="https://typora--image--image.oss-cn-beijing.aliyuncs.com/%E5%AD%A6%E5%A3%AB%E5%B8%BD%201.png"></div>&nbsp;&nbsp;&nbsp;&nbsp;权限授予</button>
+            <button class="studentReg" onclick="location.href = '../../寒假项目/学员注册管理/学员注册管理.html'"><div class="pic"><img src="https://typora--image--image.oss-cn-beijing.aliyuncs.com/%E6%95%99%E5%AD%A6%E6%A5%BC%201.png"></div>&nbsp;&nbsp;&nbsp;&nbsp;学员注册管理</button>
+            <button class="studentLea" onclick="location.href = location.href = '../../寒假项目/学员请假管理/学员请假管理.html'"><div class="pic"><img src="https://typora--image--image.oss-cn-beijing.aliyuncs.com/%E7%AC%94%E7%AD%92%201%201.png"></div>&nbsp;&nbsp;&nbsp;&nbsp;学员请假管理</button>
+            <button class="direction">方向</button>
+            <button class="inforBgd">
+                <div class="menu-button1" id="backwardButton">
+                    <img src="https://typora--image--image.oss-cn-beijing.aliyuncs.com/Frame%20(1).png">
+                </div>
+                <div class="menu-button2" id="forwardButton">
+                    <img src="https://typora--image--image.oss-cn-beijing.aliyuncs.com/Frame.png">
+                </div>
+                <table class="menu active" id="menu1">
+                    <thead>
+                        <tr>
+                            <th>姓名</th>
+                            <th>期数</th>
+                            <th>职位</th>
+                            <th>专业班级</th>
+                            <th>密码重置</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                            <td>
+                                <div class="content"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                            <td><div class="content"></div></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="menu" id="menu2">
+                                    <thead>
+                                        <tr>
+                                            <th>姓名</th>
+                                            <th>期数</th>
+                                            <th>职位</th>
+                                            <th>专业班级</th>
+                                            <th>密码重置</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content" ></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                            <td>
+                                                <div class="content"></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+            </button>
+        </div>
+    </div>
+    <script src="studentFind.js"></script>
+</body>
+</html>

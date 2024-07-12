@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>request</title>
+    <link rel="stylesheet" href="css/request.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="background typePage">
+        <div class="middle">
+            <div class="logo"></div>
+            <div class="title"></div>
+            <div class="menu0">
+                <div><button><img src="https://wangcan111.oss-cn-beijing.aliyuncs.com/%E5%85%85%E7%94%B5%201.png"  style="margin-top: -3px; margin-left: -20px; vertical-align: middle;"/>学员信息查询</button></div>
+                <div><button><img src="https://wangcan111.oss-cn-beijing.aliyuncs.com/%E5%B0%8F%E9%BB%91%E6%9D%BF%201.png" style="margin-top: -3px; margin-left: -20px; vertical-align: middle;" />学员信息修改 </button></div>
+                <div>
+                    <button>
+                        <img src="https://wangcan111.oss-cn-beijing.aliyuncs.com/%E4%BB%A3%E7%A0%81%201.png"  style="margin-top: -3px; margin-left: -40px;vertical-align: middle;" />
+                        &nbsp;通知下发&nbsp;
+                    </button>
+                </div>
+                <div><button id="assess"><img src="https://wangcan111.oss-cn-beijing.aliyuncs.com/%E4%B9%A6%E6%9C%AC%201.png" alt=""  style="margin-top: -3px; margin-left: -20px; vertical-align: middle;" >学员评估体系</button></div>
+                <div><button id="power"><img src="https://wangcan111.oss-cn-beijing.aliyuncs.com/%E5%AD%A6%E5%A3%AB%E5%B8%BD%201.png" style="margin-top: -3px; margin-left: -40px;vertical-align: middle;" >&nbsp;权限授予&nbsp;</button></div>
+                <div><button id="register"><img src="https://wangcan111.oss-cn-beijing.aliyuncs.com/%E6%95%99%E5%AD%A6%E6%A5%BC%201.png"  style="margin-top: -3px; margin-left: -20px; vertical-align: middle;"  alt="">学员注册管理</button></div>
+                <div><button id="request"> <img src="https://wangcan111.oss-cn-beijing.aliyuncs.com/%E7%AC%94%E7%AD%92%201%201.png" style="margin-top: -3px; margin-left: -20px; vertical-align: middle;" alt="">学员请假管理</button></div>
+            </div>
+            <div class="form">
+                <div class="menu">
+                    <div class="item">请假人</div>
+                    <div class="item">请假会议</div>
+                    <div class="item">请假原因</div>
+                    <div class="item">批准情况</div>
+                </div>
+                <div class="list">
+                    <div class="page active" id="pageOne">
+                        <div class="line">
+                            <div class="row id"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve-0" onclick="getRowNumber() " class="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row id"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve-1" onclick="getRowNumber()" class="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row id"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve-2" onclick="getRowNumber()" class="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row id"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve-3" onclick="getRowNumber()" class="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row id"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve-4" onclick="getRowNumber()" class="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row id"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve-5" onclick="getRowNumber()" class="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row id"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve-6" onclick="getRowNumber()" class="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row id"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve-7" onclick="getRowNumber()" class="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row id"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve-8" onclick="getRowNumber()" class="approve">未批准</button>
+                        </div>
+                    </div>
+                    <div class="page" id="pageTwo">
+                        <div class="line">
+                            <div class="row">34</div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                    </div>
+                    <div class="page" id="pageThree">
+                        <div class="line">
+                            <div class="row">56</div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                        <div class="line">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <button id="approve">未批准</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="saveSuccess">保存成功</div>
+            <div class="theTriangle" id="back"></div>
+            <div class="invertedTriangle" id="forward"></div>
+            <div class="save"><button id="save">保存</button></div>
+        </div>
+    </div>
+    <script src="js/request.js"></script>
+</body>
+</html>
